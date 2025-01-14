@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="spinner-container" id="spinner">
+        <div class="spinner-border text-light" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="loading-text">Loading your content...</div>
+    </div>
+
+    <div class="content" id="content" style="display:none;">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">My Profile</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/yuvakesh-k-652a46304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="jumbotron text-center" id="home">
+            <h1 class="display-4">Hello, I'm YUVAKESH</h1>
+            <p class="lead">Welcome to my profile website!</p>
+            <a href="#portfolio" class="btn btn-light">View My Work</a>
+        </header>
+
+        <section id="about" class="container text-center">
+            <h2>About Me</h2>
+            <p>Hello! I'm Yuvakesh, a BCA student at SRM Institute of Science and Technology, passionate about technology and programming. With a strong foundation in languages like Java and Python,
+                 I thrive on solving complex problems and building impactful applications. My journey in tech has led me to explore web development using HTML5, CSS, JavaScript, Angular, and Bootstrap.
+                  I love creating user-friendly interfaces and ensuring seamless experiences across devices. I'm committed to continuous learning and have completed certifications in Python, Java, and Web Development. 
+                  If you'd like to connect or collaborate, feel free to reach out via email or connect with me on LinkedIn.</p>
+        </section>
+
+        <section id="skills" class="container text-center">
+            <h2>My Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Programming Languages</h5>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Web Development</h5>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap</li>
+                        <li>Angular</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Tools & Technologies</h5>
+                    <ul>
+                        <li>Vs.code</li>
+                        <li>Git</li>
+                        <li>Mysql</li>
+                    </ul>
+                    
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="portfolio" class="container text-center">
+            <h2>My Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card" data-toggle="modal" data-target="#project4Modal">
+                        <img src="images/warehouse3.jpg" class="card-img-top" alt="Project 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">INVENTORY MANAGEMENT SYSTEM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card" data-toggle="modal" data-target="#project1Modal">
+                        <img src="images/senti.jpeg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">SENTIMENT ANALYSIS FOR MARKETING ENHANCEMENT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card" data-toggle="modal" data-target="#project2Modal">
+                        <img src="images/hop.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">HOSPITAL MANAGEMENT SYSTEM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card" data-toggle="modal" data-target="#project3Modal">
+                        <img src="images/dress2.jpeg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 4</h5>
+                            <p class="card-text">E-COMMERCE WEBSITE DRESS SHOP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card" data-toggle="modal" data-target="#project4Modal">
+                        <img src="images/programmer-desk_1302-14802.jpg" class="card-img-top" alt="Project 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 5</h5>
+                            <p class="card-text">PORTFOLIO WEBSITE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card" data-toggle="modal" data-target="#project4Modal">
+                        <img src="images/food2.jpeg" class="card-img-top" alt="Project 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 6</h5>
+                            <p class="card-text">FOOD DELIVERY SYSTEM</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="certifications" class="container text-center">
+            <h2>Certifications</h2>
+            <ul class="inner-list">
+                <li><p><strong>Python Programming -</strong> Accord Info Matrix</p></li>
+                <li><p><strong>Java Programming -</strong> Accord Info Matrix</p></li>
+                <li><p><strong>Web Development -</strong> Accord Info Matrix</p></li>
+            </ul>
+        </section>
+       
+
+        
+
+        <section id="contact" class="container text-center">
+            <h2>Contact Me</h2>
+            <p><strong>Email:</strong> yuvakeshkumar03@gmail.com</p>
+            <p><strong>Phone:</strong>(+91) 9345852689</p>
+            
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yuvakesh-k-652a46304/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn Profile</a></p>
+        </section>
+
+        <footer class="text-center py-4">
+            <p>&copy; 2024 Yuvakesh. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
